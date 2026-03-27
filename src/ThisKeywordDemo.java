@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 class ThisDemo {
@@ -12,15 +13,14 @@ class ThisDemo {
     }
 }
 
-public class Main {
+public class ThisKeywordDemo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        ThisDemo demo = new ThisDemo();
+        Scanner sc = new Scanner(System.in);
 
-        int val = scanner.nextInt();
-        demo.setValue(val);
-        demo.display();
-        
-        scanner.close();
+        int input = sc.nextInt();
+
+        ThisDemo obj = new ThisDemo();
+        obj.setValue(input);
+        obj.display();
     }
 }
